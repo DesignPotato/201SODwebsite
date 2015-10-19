@@ -1,0 +1,449 @@
+/* CSS Document 
+Theme Name: GNZCC
+Description: GNZCC Research site
+Version: 2.0
+Author: Sebastian Paz 
+*/
+
+body{
+ height:100%;
+  background-repeat: no-repeat;
+  background-color: #e3dcdc;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+	font-family: Arial;
+  	font-size:48px;
+  	letter-spacing: 4px;
+  	margin: 0;
+  	margin-top:10px;
+  	padding-bottom: 0;
+}
+html,body
+{
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.mainSite{
+    margin: -15px;
+    padding:0;
+    
+}
+.leftBar{
+    background-color: #f7f4f4;
+}
+.col-md-3
+{
+
+    min-width:20%;
+    width: 25%;
+	
+}
+.col-md-9
+{
+   
+    width: 75%;
+   
+}
+
+.filterBar{
+	min-height:70px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.siteFilter{
+	min-height: 70px;
+    padding-top: 10px;
+    padding-right:0px;
+    padding-left: 0px;
+}
+.containerTest{
+	min-height: 200px;
+	min-width:300px;
+	margin: 5px;
+	background-color: #eceded;
+}
+.feed{
+	 /* fix for smaller res */
+}
+.filterBlock{
+	height:60px;
+    padding-right:0px;
+    padding-left: 0px;
+}
+.filterBtn{
+	height:60px;
+	width:80px;
+    padding-right:0px;
+    padding-right: 0px;
+    margin:0px;
+}
+/* menu styles */
+.menuBar{
+	padding-right: 0px;
+	margin-top: 15px;
+    padding-left: 0px;
+}
+
+.logo{
+	min-height:100px;
+	padding-bottom: 20px;
+}
+.about{
+	min-height:200px;
+}
+.menu{
+	min-height:500px;
+	margin:0;
+	padding: 0;
+}
+.hmHeading{
+    background-color:#6d6e71;
+	color:#f7f4f4;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 2px;
+    padding-top: 40px;
+	padding: 10px;
+}
+.hmText{
+	background-color:#f7f4f4;
+	color:#6d6e71;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+    font-family: Tahoma;
+
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+}
+.menuLinks{
+	background-color:#f7f4f4;
+	text-align: left;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding: 10px;
+    color:#6d6e71;
+}
+
+/* tile flipping functionality */
+.flip-container {
+    perspective: 1000;
+    display: inline-block;
+}
+    /* flip the pane when hovered */
+    .flip-container:active .flipper, .flip-container.click .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    width: 290px;
+    margin-left:;
+    display:inline-block;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+padding-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    margin-left: -15px;
+    margin-top:-16px;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color: #eceded; 
+    margin-left: 15px;
+    padding-left:15px;
+}
+
+/*Vertical Flip */
+
+.vertical.flip-container {
+    position: relative;
+}
+
+    .vertical .back {
+        transform: rotateX(180deg);
+        margin-left:-10px;
+        margin-top: -10px;
+    }
+
+    .vertical.flip-container .flipper {
+        transform-origin: 100% 82.5px; /* half of height */
+    }
+
+    .vertical.flip-container:active .flipper {
+        transform: rotateX(-180deg);
+    }
+/* nav links */
+.nav-stacked li:hover {
+    background-color:#646567;
+    text-decoration: none;
+    color:#eceded;
+}
+.nav-stacked li:link {
+    text-decoration: none;
+    color:#58595b;
+}
+a:link{
+	text-decoration: none;
+	color:#58595b;
+}
+.breadCrumbs{
+  border-bottom:1px solid #58595b;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.breadcrumb {
+            padding: 0;
+            background-color: transparent;
+        }
+.breadcrumb ol{background-color: none;margin:0px;padding: 0;}
+.breadcrumb li {font-size: 12px;}
+.breadcrumb a {color:#58595b;}
+.breadcrumb a:hover {color:#008f44;}
+.breadcrumb>.active {color:#008f44;}
+.breadcrumb>li+li:before {color:#58595b; 
+  content: "\2192\00a0";
+}
+
+
+
+/* close commented backslash hack */
+
+.quickFlip, .quickFlip3 {
+    height: inherit;
+    width: 100%;
+    }
+.imgContainer{
+     clear: both;  
+    width: 100%; 
+    border-right: 1px ridge #999;  
+    margin-bottom: 20px;  
+    height: inherit;  
+}
+.quickFlip2 {
+    height: 100%;
+    width: 100%;
+    float: left;
+    margin-right: 10%;
+}
+
+/* the rest of this is irrelevent */
+
+H1, H2 {
+    float: left;
+    padding-right: 15px;
+    line-height: 32px;
+}
+
+.clear {
+    clear: both;
+    magin: 0;
+    padding: 0;
+}
+
+.redPanel, .blackPanel {
+    text-align: center;
+}
+
+.half-col {
+    width: 50%;
+    float: left;
+}
+
+/**** panels ****/
+
+.quickFlip, .quickFlip2, .quickFlip3 {
+    font-family: "Trebuchet MS", Verdana, Sans-serif, sans;
+    font-size: 13px;
+    position: relative;
+}
+
+.quickFlip .blackPanel, .quickFlip2 .blackPanel, .quickFlip3 .blackPanel {
+    background-color: #FFD993;
+    color: darkbrown;
+    border: 1px outset #A61C14;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.quickFlip .redPanel, .quickFlip2 .redPanel, .quickFlip3 .redPanel {
+    background-color: #75941f;
+    color: #FFF;
+    border: 1px outset #4f6417;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.half-col p {
+    padding: 5px;
+    margin:0 30px 10px 30px;
+}
+
+.half-col p.panel-content {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.half-col h3, .half-col h4 {
+    padding: 0;
+    margin: 0 35px;
+}
+
+.half-col h3 {
+    text-align: left;
+    font-size:24px;
+    line-height:24px;
+}
+
+.half-col .redPanel h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.half-col .first {
+    margin-top: 30px;
+}
+
+.half-col EM {
+    display: block;
+    padding: 0;
+}
+
+.half-col A.quickFlipCta {
+    position: absolute;
+    bottom: 30px;
+    left: 65px;
+    width: 210px;
+    font-size: 15px;
+    outline: none;
+}
+
+.quickFlip2 .redPanel a {
+    color: #FFF;
+}
+
+.quickFlipCta {
+    cursor: pointer;
+}
+
+.item{
+    border:0px solid black;
+}
+
+/* rule specific resolution */
+@media (max-width: 767px) {
+    .col-md-3
+    {
+        width:100%;
+    }
+    .col-md-9
+    {
+    	width:100%;
+    }
+    .logo{
+    	border-bottom: 0px dashed grey;
+    	min-height:250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filterBar{
+    	height:60px;
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    }
+    .leftBar{
+    background-color: #f7f4f4;
+    }
+    .hmText{
+    background-color:#f7f4f4;
+    color:#6d6e71;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    font-size:18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    .menuLinks{
+    text-align: center;
+    border-bottom:1px dashed #aaacb5;
+    }
+    .hmHeading{
+    text-align: center;
+    font-size: 22px;
+    }
+    
+
+}
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .leftBar{
+    background-color: #f7f4f4;
+    min-width: 300px;
+    }
+    .menuLinks{
+    text-align: center;
+    border-bottom:1px dashed #aaacb5;
+    }
+    .hmText{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    .hmHeading{
+    text-align: center;
+    font-size: 24px;
+    }
+  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .leftBar{
+    background-color: #f7f4f4;
+    
+    }
+    .menuLinks{
+    font-size: 16px;
+    }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .leftBar{
+    background-color: #f7f4f4;
+    max-width: 500px;
+    }
+}
+
+
+
